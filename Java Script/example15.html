@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myfunction1(){
+            var x,y;
+            x=100;
+            y=20;
+            return x+y;
+        }
+        function myfunction02(x, y){
+            return x+y;
+        }
+        function myfunction03( x, y, z){
+            return x+y+z;
+        }
+    </script>
+<p>Click the follwing button to call the funtion</p>
+<form>
+    <input type="button" onclick="myfunction01()" value="Call Funtion">
+    <input type="button" onclick="myfunction02(12,45)" value="Call Funtion">
+    <input type="button" onclick="myfunction03(12,56,4)" value="Call Funtion">
+    <p>Use different parameters inside the function and then try...</p>
+
+</form>
+</body>
+</html>

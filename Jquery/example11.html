@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/Link/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        img{
+            width: 200px;
+            height: 200px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <img src="/image/angkor.jfif" alt="" data-image1="/image/angkor.jfif" data-image2="/image/angkorwat2.jfif">
+    <img src="/image/angkorwat3.jfif" alt="" data-image1="/image/angkorwat3.jfif" data-image2="/image/Grand_Theft_Auto_V.png"> 
+    <img src="/image/download (1).jfif" alt="" data-image1="/image/download (1).jfif" data-image2="/image/download (2).jfif">
+</body>
+<script>
+    $(document).ready(function(){
+        $("img").mouseover(function(){
+            $(this).attr("src",$(this).data("image2"));
+        });
+        $("img").mouseout(function(){
+            $(this).attr("src",$(this).data("image1"));
+        });
+    });
+</script>
+</html>

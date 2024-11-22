@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <form  name="myForm" method="post">
+   tfid <br> <input type="text" name="tfid"><br>
+
+    <input type="button" value="Submit" onclick="allLetter(document.myForm.tfid)"> &nbsp;&nbsp;&nbsp;
+    <input type="reset" value="Reset">
+    <p id='dis'></p>
+ </form>
+</body>
+<script>
+    function allLetter(inputtxt){
+        var numbers=/^[0-9A-Z]+$/;
+        if(inputtxt.value.match(numbers)){
+            document.getElementById('dis').innerHTML='Your Number have accepted : you can try another';
+            return true;
+        }
+        else{
+            document.getElementById('dis').innerHTML="Please input Number(0-9) and A-Z only";
+            return false;
+        }
+    }
+</script>
+</html>

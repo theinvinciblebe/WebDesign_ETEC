@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 align=center>etec_array</h2>
+    <script>
+        var iMax=5;
+        var jMax=2;
+        var arr =new Array();
+
+        for (i=0;i<iMax;i++){
+            arr[i]=new Array();
+            for(j=0;j<jMax;j++){
+                arr[i][j]=prompt("Input Array= ");
+            }
+        }
+        var str="<table align=center border=1 width=100px>";
+            for(i=0;i<iMax;i++){
+                str=str + "<f\tr>";
+                 for(j=0;j<jMax;j++){
+                     str=str + "<td>" +arr[i][j]+"</td>";
+                 }
+                 str=str+"</tr>";
+            }
+            str=str +"</table>";
+            document.write(str);
+    </script>
+</body>
+</html>

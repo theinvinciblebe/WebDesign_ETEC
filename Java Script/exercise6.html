@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Table</title>
+</head>
+<body>
+    <form action="">
+        <label for="name">name</label><br>
+        <input type="text" name="Name" id="name"><br>
+        <label for="gender">Gender</label><br>
+        <input type="text" name="gender" id="gender"><br>
+        <label for="telephone">Telephone</label><br>
+        <input type="text" name="telephone" id="telephone"><br>
+        <label for="email">Email</label><br>
+        <input type="text" name="email" id="email"><br>
+        <br>
+        <input type="button" value="Save" id="save">
+        <input type="button" value="Reset">
+        <p id="demo"></p>
+    </form>
+</body>
+<script>
+    var str="<tabel border=1 width=100% cellpadding cellspacing=0";
+    str = str + "<tr><th>Name</th><th>Gender</th><th>Telephone</th>th>Email</th></tr>";
+    document.getElementById("save").addEventListener("click",function(){
+        var N=document.getElementById("name").value;
+        var G=document.getElementById("gender").value;
+        var T=document.getElementById("telephone").value;
+        var E=document.getElementById("email").value;
+            str +="<tr><th>"+N+"</th><th>"+N+"</th><th>"+T+"</th>th>"+E+"</th></tr>";
+            document.getElementById("demo").innerHTML=str;
+    });
+</script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var s1=parseFloat(prompt("Enter Score1"));
+    var s2=parseFloat(prompt("Enter Score2"));
+    var s3=parseFloat(prompt("Enter Score3"));
+    var s4=parseFloat(prompt("Enter Score4"));
+    var s5=parseFloat(prompt("Enter Score5"));
+
+    var total,average,grade;
+    total=s1+s2+s3+s4+s5;
+    average=total/5;
+    if(average>=90){
+        grade="A";
+    }
+    else if(average>=80 && average<=90){
+        grade="B";
+    }
+    else if(average>=70 && average<=80){
+        grade="C";
+    }
+    else if(average>=60 && average<=70){
+        grade="D";
+    }
+    else if(average>=50 && average<=60){
+        grade="E";
+    }
+    else{
+        grade="F";
+    }
+    
+    document.write("<br>Score1 :"+s1);
+    document.write("<br>Score2 :"+s2);
+    document.write("<br>Score3 :"+s3);
+    document.write("<br>Score4 :"+s4);
+    document.write("<br>Score5 :"+s5);
+    document.write("<br>Total :"+total);
+    document.write("<br>Average :"+average);
+    document.write("<br>Grade :"+grade);
+</script>
+</html>

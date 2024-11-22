@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Value A: <input type="text" id="a">
+    Result : <input type="text" id="result">
+</body>
+<script>
+    var A=document.getElementById("a");
+    document.getElementById("a").addEventListener("keyup",function(){
+        if(this.value >=50){
+            document.getElementById("result").value="pass";
+        }
+        else{
+            document.getElementById("result").value="fail";
+        }
+    });
+</script>
+</html>

@@ -1,0 +1,587 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.main{
+    margin: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: red;
+    position: fixed;
+    display: flex;
+    top: 0px;
+    z-index: 10;
+}
+.main-menu{
+    width: 80%;
+    height: 100%;
+    margin: 0px auto;
+    display: flex;
+    overflow: hidden;
+}
+.logo{
+    width: 5%;
+    height: 100%;
+}
+.top-menu{
+    width: 90%;
+    height: 100%;
+    margin-left: 50px;
+    align-items: center;
+    display: flex;
+}
+.top-menu a{
+    font-family: 'Battambang', 'Roboto';
+    text-decoration: none;
+    padding: 18px;
+    color: aliceblue;
+    font-size: 11pt ;
+    font-weight: bold;
+}
+.top-menu a:hover{
+    background-color: rgb(141, 14, 14);
+}
+.top-menu a i{
+    transition: all 0.3s;
+}
+.top-menu a:hover i{
+    transform: rotate(180deg);
+}
+.top-menu a span{
+    position: absolute;
+    background-color: white;
+    color: black;
+    width: 150px;
+    padding: 5px 15px;
+    left: 264px;
+    top: 60px;
+    transition: all 0.3s;
+    opacity: 0;
+    
+}
+.top-menu #cxz:hover .zxc{
+    top: 60px;
+    opacity: 10;
+}
+.search{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search i{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 20px;
+}
+.trending{
+    width: 80%;
+    height: 40px;
+    margin: 9px auto;
+    margin-top: 69px;
+    display: flex;
+    background-color: red;
+}
+.trending-now{
+    width: 13%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    color: white;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.maquee{
+    width: 87%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.txt-run:hover{
+    color: red;
+}
+
+i{
+    color: red;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+marquee{
+    font-size: 12pt;
+    color: gray;
+}
+.banner-image{
+    width: 80%;
+    height: 100px;
+    margin: 0px auto;
+}
+.banner-image img{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+.news{
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    margin: 10px auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-news{
+    width: 98%;
+    height: 430px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.lefttop-news{
+    overflow: hidden;
+    width: 49.5%;
+    height: 100%;
+    position: relative;
+}
+.lefttop-news img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: all 0.8s;
+    position: absolute;
+}
+.lefttop-news span{
+    position: absolute;
+    color: white;
+    font-family:  'Battambang', 'Roboto';
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    padding: 50px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, #000 100%);
+}
+.righttop-news{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    width: 49%;
+    height: 100%;
+    position: relative;
+}
+.righttop-news-top{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 49%;
+}
+.righttop-news-top img{
+    width: 100%;
+    height: 100% ;
+    transform: scale(1);
+    transition: all 0.8s;
+}
+.righttop-news-top span{
+    position: absolute;
+    color: white;
+    font-family: 'Battambang', 'Roboto';
+    font-size: 17px;
+    font-weight: bold;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    padding: 30px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, #000 100%);
+}
+.righttop-news-bottom{
+    overflow: hidden;
+    width: 100%;
+    height: 49.5%;
+    display: flex;
+    justify-content: space-between;
+}
+.right01{
+    position: relative;
+    width: 49.5%;
+    height: 100%;
+}
+.right01 img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: all 0.8s;
+}
+.right01 span{
+    position: absolute;
+    color: white;
+    font-family: 'Battambang', 'Roboto';
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, #000 100%);
+}
+.right02{
+    width: 49.5%;
+    height: 100%;
+    position: relative;
+}
+.right02 img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: all 0.8s;
+}
+.right02 span{
+    position: absolute;
+    color: white;
+    font-family: 'Battambang','Roboto';
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, #000 100%);
+}
+.top-news .lefttop-news:hover img{
+    transform: scale(1.1);
+}
+.top-news .righttop-news-top:hover img{
+    transform: scale(1.1);
+}
+.top-news .righttop-news-bottom .right01:hover img{
+    transform: scale(1.1);
+}
+.top-news .righttop-news-bottom .right02:hover img{
+    transform: scale(1.1);
+}
+.righttop-news-bottom .right01{
+    overflow: hidden;
+}
+.righttop-news-bottom .right02{
+    overflow: hidden;
+}
+.main-content{
+    background-color: white;
+    width: 80%;
+    height: auto;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.content-left{
+    width: 75%;
+    height: 100%;
+}
+.hot-news{
+    width: 100%;
+    height: 500px;
+}
+.title-txt{
+    width: 100%;
+    height: 50px;
+}
+.txt{
+    width: 20%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.txt span{
+    size: 50px;
+    font-family: 'Battambang','Roboto';
+    font-size: 15pt;
+    color: white;
+}
+.none-txt{
+    width: 80%;
+    height: 100%;
+    background-color: white;
+}
+.news-content{
+    margin: 10px;
+    margin-top: 1px;
+    border-top: 2px solid red;
+    width: 100%;
+    height: 449px;
+    display: flex;
+    justify-content: space-between;
+}
+.box-left-content{
+    width: 49%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    overflow: hidden;
+}
+.left-content-txt{
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 30%;
+    font-size: 15pt;  
+}
+.left-content-txt p{
+    font-size: 10pt;
+    color: gray;
+}
+.left-content-txt i{
+    font-size: 10pt;
+    color: gray;
+}
+.left-content-img{
+    overflow: hidden;
+    width: 100%;
+    height: 66%;
+    display: flex;
+}
+.box-left-content:hover img{
+    transform: scale(1.1);
+}
+.left-content-img img{
+    width: 100%;
+    width: 100%;
+    transform: scale(1);
+    transition: all 0.8s;
+}
+.box-right-content{
+    margin: 8px;
+    width: 49%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.right-content{
+    margin: 7px auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.right-content-img{
+    overflow: hidden;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.right-content-img img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: all 0.8s;
+}
+.right-content:hover img{
+    transform: scale(1.1);
+}
+.right-content-txt{
+    width: 60%;
+    height: 100%;
+}
+.right-content-txt span{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13pt;
+}
+.right-content-txt p{
+    font-size: 10pt;
+    color: gray;
+}
+.right-content-txt i{
+    font-size: 10pt;
+    color: gray;
+}
+.content-right{
+    justify-content: space-evenly;
+    display: flex;
+    width: 28%;
+    height: auto;
+}
+.app{
+    width: 100%;
+    height: 52px;
+    background-color: white;
+}
+.app-txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 100%;
+    background-color: red;
+}
+.app-txt span{
+    size: 50px;
+    font-family: 'Battambang','Roboto';
+    font-size: 12pt;
+    color: white;
+}
+.app-gif{
+    border-top: 2px solid red;
+    width: 100%;
+    height: 100%;
+}
+.gif-img{
+    margin-top: 2px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.gif-img1{
+    width: 48%;
+    height: 100%;
+}
+.gif-img1 img{
+    width: 100%;
+    height: 100%;
+}
+.right-img-gif{
+    margin-top: 30px;
+    width: 100%;
+    height: 360px;
+}
+.right-img-gif img{
+    width: 100%;
+    height: 94%;
+}
+.aa{
+    width: 100%;
+    height: 620px;
+}
+.head-right{
+    display: flex;
+    width: 100%;
+    height: 8%;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 41%;
+    height: 100%;
+    background-color: red;
+}
+.text p{
+    margin: 0px auto;
+
+}
+.nonetext{
+    width: 59%;
+    height: 100%;
+    background-color: white;
+}
+.rightimg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2px auto;
+    border-top: 2px solid red;
+    width: 100%;
+    height: 90%;
+}
+.rightimgaa{
+    width: 100%;
+    height: 32%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.imgaa{
+    overflow: hidden;
+    width: 40%;
+    height: 98%;
+}
+.imgaa img{
+    transform: scale(1);
+    transition: all 0.3s;
+    width: 100%;
+    height: 100%;
+}
+.rightimgaa:hover img{
+    transform: scale(1.1);
+}
+.txtaa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 58%;
+    height: 19%;
+}
+.txtaa p{
+    margin-right: 100px;
+    color: gray;
+    font-size: 10pt;
+}
+.txtaa i{
+    color: gray;
+}
+.txtaa span{
+    font-size: 10pt;
+    font-weight: bold;
+}
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: red;
+}
+.footercont{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    width: 80%;
+    height: 90%;
+}
+.fot1{
+    width: 33%;
+    height: 100%;
+}
+.fot1 h3{
+    color: white;
+}
+.fot1 img{
+    width: 99%;
+    height: 60%;
+}
+.fotimg i{
+    color: white;
+}
+.fot1 span{
+    color: white;
+    font-weight: bold;
+}
+.fot1 p{
+    padding: 10px;
+    font-size: 12pt;
+    border-bottom: 1px dotted white;
+    margin-left: 5px;
+}
+.fot1 p i{
+    color: white;
+}
+.fot1 p a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.fot1 p:hover a{
+    margin-left: 20px;
+}

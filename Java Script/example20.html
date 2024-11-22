@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+         body{
+            text-align: center;
+            width: 400px;
+            height: 250px;
+            border: 3px solid gray;
+        }
+</style>
+<body>
+    
+    <h2 >Calculator</h2>
+        Value A: <input type="text" placeholder="Enter the number!" id="a" size="15px" style="color: red;background-color: black;"><br><br>
+        Value B: <input type="text" placeholder="Enter the number!" id="b" size="15px" style="color: red;background-color: black;"><br><br>
+        <b ><input type="button" value="+" id="btm-bok" style="background-color: cadetblue;">
+        <input type="button" value="-" id="btm-dok" style="background-color: cadetblue;">
+        <input type="button" value="*" id="btm-kun" style="background-color: cadetblue;">
+        <input type="button" value="/" id="btm-jaek" style="background-color: cadetblue;">
+        <input type="button" value="%" id="btm-mod" style="background-color: cadetblue;"></b><br><br>
+        Result: <input type="text" id="Result" placeholder="0" size="8px" style="color: red;background-color: black;">
+</body>
+<script>
+    var A=document.getElementById('a');
+    var B=document.getElementById('b');
+    
+    document.getElementById("btm-bok").addEventListener("click",function(){
+        var Total=parseInt(A.value) + parseInt(B.value);
+        document.getElementById("Result").value=Total;
+    });
+    document.getElementById("btm-dok").addEventListener("click",function(){
+        var Total=parseInt(A.value) - parseInt(B.value);
+        document.getElementById("Result").value=Total;
+    });
+    document.getElementById("btm-kun").addEventListener("click",function(){
+        var Total=parseInt(A.value) * parseInt(B.value);
+        document.getElementById("Result").value=Total;
+    });
+    document.getElementById("btm-jaek").addEventListener("click",function(){
+        var Total=parseInt(A.value) / parseInt(B.value);
+        document.getElementById("Result").value=Total;
+    });
+    document.getElementById("btm-mod").addEventListener("click",function(){
+        var Total=parseInt(A.value) % parseInt(B.value);
+        document.getElementById("Result").value=Total;
+    });
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/Link/jquery.min.js"></script>
+</head>
+<body>
+    <img src="/image/Grand_Theft_Auto_V.png" alt="" id="p1" width="300" height="250">
+    <div id="one" align=right></div>
+    <div id="two" align=left></div>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#p1").hover(function(){
+            document.getElementById("one").innerHTML="Welcome to Cambodia...!";
+        });     
+        $("#p1").hover(function(){
+            document.getElementById("two").innerHTML="Thanks:)";
+        });
+    });
+</script>
+</html>

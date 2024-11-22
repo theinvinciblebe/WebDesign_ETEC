@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Click me" onclick="result1()">
+    <p id="demo"></p>
+</body>
+<script>
+    // Return Function none parameters
+    //     function koko(){
+    //         var x=4;
+    //         var y=10;
+    //         var total=x+y;
+    //         return total;
+    //     }
+    //     function result(){
+    //         var total=koko();
+    //         document.getElementById("demo").innerHTML="x+y= "+total;
+    //     }
+
+    //Return Function has parameters
+        function myfunction(x,y){
+            var total=x-y;
+            return total;
+        }
+        function result1(){
+            var total=myfunction(10,5);
+            document.getElementById('demo').innerHTML="Total of x-y= "+total;
+        }
+</script>
+</html>

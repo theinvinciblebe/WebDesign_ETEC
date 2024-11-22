@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/Link/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p>By default, all HTML elements have a stativ position, and cannot be moved. To mainpulate the 
+        CSS posotion property of the element to relative, fixed, or absolute!</p>
+
+    <button id="btn1">
+        Start Animation
+    </button>
+    <div id="one" style="background: red;height:150px;width:150px;"></div><br>
+    <div id="two" style="background: black;height:150px;width:150px;"></div><br>
+    <button id="btn2">
+        Start Animation
+    </button>
+</body>
+<script>
+        $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#one").animate({left:'250px', opacity:'0.5', width:'250px',height:'250px'});
+        });
+        $("#btn2").click(function(){
+        $("#two").animate({
+            left: '+=100px',
+            height:'+=100px',
+            width: '+=100px',
+        });
+    });
+    });
+</script>
+</html>

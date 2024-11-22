@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  name="myForm" method="post">
+        Input Value A: <br> <input type="text" name="fname"><br>
+    
+        Input Value B: <br> <input type="text" name="lname"><br><br>
+        <input type="button" value="Submit" onclick="stringlength(document.myForm.fname,1,10);stringlength(document.myForm.lname,1,10)"> &nbsp;&nbsp;&nbsp;
+        <input type="reset" value="Reset">
+        <p id='dis'></p>
+     </form>
+</body>
+<script>
+    function stringlength(inputtxt, minlength, maxlength){
+        var field = inputtxt.value;
+        var mnlen = minlength;
+        var mxlen = maxlength;
+        if(field.length<mnlen || field.length>mxlen){
+            document.getElementById('dis').innerHTML="Please input the user id between "+mnlen+"and"+mxlen+"characters";
+            return false;
+        }
+        else{
+            document.getElementById('dis').innerHTML='Your userid have accepted';
+            return true;
+        }
+    }
+</script>
+</html>

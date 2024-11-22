@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/Link/jquery.min.js"></script>
+    <title>CSS Style</title>
+    <style>
+        .number{
+            background-color: green;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            width: auto;
+            font-size: 20pt;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="number">number1</div>
+    <div class="number">number2</div>
+    <div class="number">number3</div>
+    <div class="number">number4</div>
+    <div class="number">number5</div>
+</body>
+<script>
+    $(document).ready(function(){
+        var n=0;
+        $('.number').click(function(){
+            // $(".number").css({
+            //     "background-color":"red",
+            //     "color":"black",
+            //     "font-size":"30px"
+            // });
+            //...............................................
+        $(this).css({
+            "background-color":"red",
+            "color": "black",
+            "font-size":"25pt"
+        });
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var code=parseInt(prompt("Enter Code:"));
+    var name1=prompt("Enter Name:");
+    var qty=parseInt(prompt("Enter Qty:"));
+    var price=parseFloat(prompt("Enter Price:"));
+    var total,dis,pay;
+
+    total=qty*price;
+    if(total>=1 && total<=10){
+        dis=10;
+        pay=total-total*0.1;
+    }
+    else if(total>10 && total<=20){
+        dis=20;
+        pay=total-total*0.2;
+    }
+    else if(total>20 && total<=30){
+        dis=30;
+        pay=total-total*0.3;
+    }
+    else if(total>30 && total<=40){
+        dis=40;
+        pay=total-total*0.4;
+    }
+    else if(total>40 && total<=50){
+        dis=50;
+        pay=total-total*0.5;
+    }
+    else if(total>50 && total<=60){
+        dis=60;
+        pay=total-total*0.6;
+    }
+    else{
+        dis=70;
+        pay=total-total*0.7;
+    }
+
+    document.write("<br>Code Product :"+code);
+    document.write("<br>Name Procuct :"+name1);
+    document.write("<br>Qty Product :"+qty);
+    document.write("<br>Price Product :"+price+"$");
+    document.write("<br>Total :"+total+"$");
+    document.write("<br>Discount :"+dis+"%");
+    document.write("<br>Payment :"+pay+"$")
+
+</script>
+</html>

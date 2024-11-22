@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Link/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 750px;
+            border: 3px solid blue;
+        }
+        .menu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            background-color: red;
+        }
+        .menua{
+            font-size: 11pt;
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            background-color: red;
+        }
+        .menub{
+            font-size: 15pt;
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            background-color: red;
+        }
+        .menub a{
+            text-decoration: none;
+            color: white;
+        }
+        .menua a{
+            text-decoration: none;
+            color: white;
+        }
+        .menua :hover{
+            background-color: white;
+            color: black;
+            transform: scale(1.1);
+            transition: all 0.3s;
+        }
+        .menub :hover{
+            color: gray;
+            transform: scale(1.1);
+            transition: all 0.3s;
+        }
+        .news{
+            height: 550px;
+            margin: 0px;
+        }
+        .news-left{
+            margin: 0px;
+            height: 550px;
+        }
+        .news-left-top-left{
+            height: 275px;
+            margin: 0px;
+            padding: 2px;
+        }
+        .news-left-top-right{
+            margin: 0px;
+            padding: 2px;
+            height: 275px;
+        }
+        .cx1{
+            height: 137.5px;
+        }
+        .cx1img{
+            height: 137.5px;
+        }
+        .cx1txt{
+            height: 137.5px;
+        }
+        .cx2{
+            height: 137.5px;
+        }
+        .cx2img{
+            height: 137.5px;
+        }
+        .cx2txt{
+            height: 137.5px;
+        }
+        .news-left-bottom-left{
+            margin: 0px;
+            padding: 2.5px;
+            border-top: 3px solid red;
+            height: 275px;
+        }
+        .news-left-bottom-right{
+            border-top: 3px solid red;
+            height: 275px;
+        }
+        .cz1{
+            height: 65px;
+        }
+        .cz2{
+            height: 210px;
+        }
+        .cx11{
+            height: 91px;
+        }
+        .cx11txt{
+            height: 90px;
+            font-size: 10pt;
+        }
+        .news-right{
+            margin-top: 95px;
+            height: 550px;
+        }
+        .jkj{
+            border-top: 3px solid red;
+        }
+        .txtright{
+            height: 60px;
+            margin: 0px;
+            padding: 0px;
+        }
+        .footer{
+            height: 150px;
+            background-color:red;
+        }
+        .fot{
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .fot1{
+            font-size: 10px;
+            height: 150px;
+            padding: 2px;
+        }
+        h3{
+            font-size: 20px;
+            color: white;
+        }
+        p{
+            color: white;
+            font-size: 11pt;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-1 menu">
+                <img src="../image/logo bc.png" height="40px">
+            </div>
+            <div class="col-10 menua">
+                <a href="#">អចលនទ្រព្យ</a> &nbsp; | &nbsp;
+                <a href="#">ភាពជាអ្នកដឺកនាំ</a> &nbsp; | &nbsp;
+                <a href="#">កំពូលអ្នកលក់</a> &nbsp; | &nbsp;
+                <a href="#">ចាប់ផ្តើមអជីវកម្ម</a> &nbsp; | &nbsp;
+                <a href="#">មុខរបរបច្ចេកវិទ្យា</a> &nbsp; | &nbsp;
+                <a href="#">ហិរញ្ញវត្ថុ</a> &nbsp; | &nbsp;
+                <a href="#">កសិពាណិជ្ជកម្ម</a> &nbsp; | &nbsp;
+                <a href="#">អត្ថបទ PR</a> &nbsp; &nbsp; 
+            </div>
+            <div class="col-1 menub">
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 news">
+                <div class="row">
+                    <div class="col-9 news-left">
+                        <div class="row">
+                            <div class="col-6 news-left-top-left">
+                                <img src="../image/lefttop-news.png" width="100%" height="100%">
+                            </div>
+                            <div class="col-6 news-left-top-right">
+                                <div class="row">
+                                    <div class="col-12 cx1">
+                                        <div class="row">
+                                            <div class="col-6 cx1img">
+                                                <img src="../image/right02.jpg" width="90%" height="95%">
+                                            </div>
+                                            <div class="col-6 cx1txt">
+                                                <span style="font-size: 13px; font-weight: bold; text-align: center; ">In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 cx2">
+                                        <div class="row">
+                                            <div class="col-6 cx2img">
+                                                <img src="../image/right01.jpg" width="90%" height="95%">
+                                            </div>
+                                            <div class="col-6 cx2txt">
+                                                <span style="font-size: 13px; font-weight: bold; text-align: center; ">In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 news-left-bottom-left">
+                                <div class="row">
+                                    <div class="col-12 cz1">
+                                        <span style="font-size: 13px; font-weight: bold; text-align: center; ">In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 cz2">
+                                        <img src="../image/left-content-img.jpg" width="100%" height="100%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 news-left-bottom-right">
+                                <div class="row">
+                                    <div class="row">
+                                        <div class="col-12 cx11">
+                                            <div class="row">
+                                                <div class="col-6 cx1img">
+                                                    <img src="../image/right02.jpg" width="90%" height="65%">
+                                                </div>
+                                                <div class="col-6 cx11txt">
+                                                    <span style="font-size: 13px; font-weight: bold; text-align: center; ">In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 cx11">
+                                            <div class="row">
+                                                <div class="col-6 cx1img">
+                                                    <img src="../image/right02.jpg" width="90%" height="65%">
+                                                </div>
+                                                <div class="col-6 cx11txt">
+                                                    <span style="font-size: 13px; font-weight: bold; text-align: center; ">In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 cx11">
+                                            <div class="row">
+                                                <div class="col-6 cx2img">
+                                                    <img src="../image/right01.jpg" width="90%" height="65%">
+                                                </div>
+                                                <div class="col-6 cx11txt">
+                                                    <span style="font-size: 13px; font-weight: bold; text-align: center; ">In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 news-right">
+                        <div class="row jkj">
+                            <div class="col-12 cx11">
+                                <div class="row">
+                                    <div class="col-6 cx1img">
+                                        <img src="../image/right02.jpg" width="100%" height="63%">
+                                    </div>
+                                    <div class="col-6 txtright">
+                                        <span style="font-size: 10px; font-weight: bold; text-align: center; ">In order to protect the safety of students from Omi, the Ministry of Education</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 cx11">
+                                <div class="row">
+                                    <div class="col-6 cx1img">
+                                        <img src="../image/right02.jpg" width="100%" height="63%">
+                                    </div>
+                                    <div class="col-6 txtright">
+                                        <span style="font-size: 10px; font-weight: bold; text-align: center; ">In order to protect the safety of students from Omi, the Ministry of Education</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 cx11">
+                                <div class="row">
+                                    <div class="col-6 cx2img">
+                                        <img src="../image/right01.jpg" width="100%" height="63%">
+                                    </div>
+                                    <div class="col-6 txtright">
+                                        <span style="font-size: 10px; font-weight: bold; text-align: center; ">In order to protect the safety of students from Omi, the Ministry of Education</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 cx11">
+                                <div class="row">
+                                    <div class="col-6 cx2img">
+                                        <img src="../image/right01.jpg" width="100%" height="63%">
+                                    </div>
+                                    <div class="col-6 txtright">
+                                        <span style="font-size: 10px; font-weight: bold; text-align: center; ">In order to protect the safety of students from Omi, the Ministry of Education</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 cx11">
+                                <div class="row">
+                                    <div class="col-6 cx2img">
+                                        <img src="../image/right01.jpg" width="100%" height="63%">
+                                    </div>
+                                    <div class="col-6 txtright">
+                                        <span style="font-size: 10px; font-weight: bold; text-align: center; ">In order to protect the safety of students from Omi, the Ministry of Education</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 footer">
+                <div class="row">
+                    <div class="col-4 fot">
+                        <img src="../image/cover-min.png" width="90%" height="90%">
+                    </div>
+                    <div class="col-4 fot1 ">
+                        <h3>Contact BUSINESS CAMBODIA</h3>
+                        <p><i class="fas fa-angle-right"></i>&nbsp;Hotline: +855 (0) 89 660 503 | +855 (0) 88 666 0503 <br>
+                        <i class="fas fa-angle-right"></i>&nbsp;Advertising Section (+855) 17 300 755/093 300 755 <br>
+                        <i class="fas fa-angle-right"></i>&nbsp;Book section (+855) 16 300 843/017 300 844 <br>
+                        <i class="fas fa-angle-right"></i>&nbsp;Accounting (+855) 92 57 58 23</p>
+                    </div>
+                    <div class="col-4 fot1">
+                        <h3>POPULAR CATEGORY</h3>
+                        <p><i class="fas fa-angle-right"></i>&nbsp;Latest News <br>
+                        <i class="fas fa-angle-right"></i>&nbsp;Starting a business <br>
+                        <i class="fas fa-angle-right"></i>&nbsp;Leadership <br>
+                        <i class="fas fa-angle-right"></i>&nbsp;Technology <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

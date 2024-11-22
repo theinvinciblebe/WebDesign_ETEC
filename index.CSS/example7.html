@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /* Style the header */
+    div#header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+    }
+    /* Container for flexboxes*/
+    div#section {
+        display: -webkit-flex;
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+    }
+    /*style the negative menu*/
+    nav {
+        flex: 1;
+        background: #ccc;
+        padding: 20px;
+    }
+    /*style the list in side the menu*/
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    /*stye the content*/
+    div#article {
+        flex: 3;
+        background-color: #f1f1f1;
+        padding: 10px;
+    }
+        /*style the footer*/
+        div#footer {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+</style>
+<body>
+    <div id="header">
+        <h1> សួរស្តីប្អូនៗទាំងអស់គ្នា</h1>
+    </div>
+    <div id="section">
+        <nav>
+            <ul>
+                <li><a href="#">ទំព័រដើម</a></li>
+                <li><a href="#">អំពីETEC</a></li>
+                <li><a href="#">ទំនាក់ទំនង</a></li>
+            </ul>
+        </nav>
+
+    <div id="article">
+        <h1>ETEC Center</h1>
+        <p>London is the capital city of England. It is the most populous city in the United Kingdom, withe a 
+            metropolitan area of over 13 milion inhabitats.metropolitan area of over 13 milion inhabitats.metropolitan area of over 13 milion inhabitats.
+        </p>
+    </div>
+    </div>
+    <div id="footer">
+        <p>ផ្នែកជើង Website</p>
+    </div>
+</body>
+</html>

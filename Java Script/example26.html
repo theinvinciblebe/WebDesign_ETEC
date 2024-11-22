@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Array 2 Dimemsinal</h2>
+    <script>
+        var arr=new Array();
+        arr[0] = new Array();
+            arr[0][0]=1;
+            arr[0][1]=2;
+
+        arr[1]=new Array();
+            arr[1][0]=3;
+            arr[1][1]=4;
+
+         arr[2]=new Array();
+            arr[2][0]=6;
+            arr[2][1]=9;
+        for(var i=0;i<3;i++){
+            for(var j=0;j<2;j++){
+                document.write(arr[i][j] +"     ");
+            }
+            document.write("<br/>");
+        }
+    </script>
+</body>
+</html>

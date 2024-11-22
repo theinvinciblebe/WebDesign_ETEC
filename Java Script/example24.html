@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        var str="<table border=1>";
+        str=str+ "<tr><th>Index</th><th>Value</th><tr>";
+        var a =new Array();
+        //var a=[40, 100, 1, 5, 25, 10];
+        var n;
+        n=prompt("Input Number of Array=");
+        for(i=0;i<n;i++){
+            a[i]=prompt("Input Value #"+(i+1));
+        }
+        for(i=0;i<a.length;i++){
+            str=str + "<tr><td>" + (i+1) + "</td><td>" + a[i]+"</td><tr>";
+        }
+        str=str+ "</table>";
+        document.write(str);
+    </script>
+</body>
+</html>

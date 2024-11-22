@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/Link/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Welcome to my web page</h1>
+
+    <table border="1">
+        <tr>
+            <th>Company</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Sok Dara</td>
+            <td>Cambodia</td>
+        </tr>
+        <tr>
+            <td>Chan Jong</td>
+            <td>Thailand</td>
+        </tr>
+        <tr>
+            <td>Kim Reco</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Theng Sothea</td>
+            <td>Cambodia</td>
+        </tr>
+    </table>
+</body>
+<script>
+    $(document).ready(function(){
+        $("tr:odd").css("background-color","yellow");
+    });
+</script>
+</html>

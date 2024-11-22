@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Website Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 10%;
+            background-color: gray;
+        }
+        /* style the header*/
+        #header {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+        /*Create three equal colums that floats next to each other */
+        #column {
+            float: left;
+            width: 33.33%;
+            padding: 15px;
+        }
+        /* Create floats after the culumns */
+        #row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Style the header */
+        #footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1​​ style="font-family: initial;">កាលវិភាគសិក្សាឆ្នាំទីមួយ<br>
+    SETEC Insittute</h1>
+    </div>
+<div id="row">
+    <div id="column">
+        <h2>Monday</h2>
+        <p> Phnom Penh Small-Group Tour: Genocide Museum, Killing Fields
+            This day starts by learning about the tragic and fascinating recent history of...</p>
+    </div>
+    <div id="column">
+        <h2>Tuesday</h2>
+        <p> Phnom Penh Small-Group Tour: Genocide Museum, Killing Fields
+            This day starts by learning about the tragic and fascinating recent history of...</p>
+    </div>
+    <div id="column">
+        <h2>Wednesday</h2>
+        <p> Phnom Penh Small-Group Tour: Genocide Museum, Killing Fields
+            This day starts by learning about the tragic and fascinating recent history of...</p>
+    </div>
+</div>
+    <div id="footer">
+        <h1>Footer</h1>
+    </div>
+    
+
+</body>
+</html>

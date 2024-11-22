@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/Link/jquery.min.js"></script>
+    <style>
+        .sub_box{
+            width: 300px;
+            height: 300px;
+            background-color: green;
+            margin: 10px;
+            float: left;
+            padding: 20px 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="sub_box">
+            <input type="button" value="Click btn1" id="btn1">
+        </div>
+        <div class="sub_box">
+            <input type="button" value="Click btn2" id="btn2">
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            // $('.sub_box').css({"background-color":"red"});
+            // $(this).parent().css({"background-color":"red"});
+            $(this).parents('.box').find('.sub_box').eq(1).css({"background-color":"red"});
+            // $(this).parents('.box').find('.sub_box:eq(0)').css({"background-color":"red"});
+        });
+    });
+</script>
+</html>

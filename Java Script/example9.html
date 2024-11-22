@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Click the button to demonstrate the prompt box.</p>
+
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction(){
+            var x,y;
+
+            x =parseInt(prompt("Enter Value X=", "0"));
+            y =parseInt(prompt("Enter Value Y=", "0"));
+            alert("X+Y=" + (x+y));
+            alert("X-Y=" + (x-y));
+            alert("X*Y=" + (x*y));
+            alert("X/Y=" + (x/y));
+        }
+    </script>
+</body>
+</html>

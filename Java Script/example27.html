@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 align="center">JavaScript Associative Array</h2>
+    <script>
+        var widthRang = new Array();
+        widthRang[46]={ sel:46, min:0, max:52};
+        widthRang[66]={sel:66, min:52, max:70};
+        widthRang[90]={sel:90, min:70, max:94};
+
+        var i=1;
+        for (var key in widthRang){
+            document.write("key #"+i+"="+key+";&nbsp;&nbsp;&nbsp; min/max ="+widthRang[key].min+"/"+widthRang[key].max+"<br/>");
+            i++;
+        }
+    </script>
+</body>
+</html>

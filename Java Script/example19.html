@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute</title>
+</head>
+<body>
+  <img src="../image/download(5).png " onmouseover="" onmouseout="" alt="">  
+</body>
+<script>
+    document.querySelector("img").addEventListener("mouseover",()=>{
+        document.querySelector("img").setAttribute("src","../image/images (6).jfif");
+    });
+    document.querySelector("img").addEventListener("mouseout",function(){
+        document.querySelector("img").setAttribute("src","../image/download(5).png");
+    });
+</script>
+</html>

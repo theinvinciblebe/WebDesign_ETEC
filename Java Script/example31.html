@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+            float: left;
+            width: 100px;
+            height: 60px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="Click Me" id="btn">
+    <p id="demo"></p>
+</body>
+<script>
+    var Colors=["red","blue","green","yellow","gray","black"];
+    document.getElementById('btn').addEventListener('click',function(){
+        var txt='';
+        for(var i in Colors){
+            // alert(Colors[i]);
+            txt += "<div class='color' style='background-color:"+Colors[i]+";'></div>";
+        }
+        document.getElementById('demo').innerHTML=txt;
+    });
+</script>
+</html>

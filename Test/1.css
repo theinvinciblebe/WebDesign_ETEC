@@ -1,0 +1,28 @@
+.Container{
+    border: 3px solid blue;
+    width: 500px;
+    height: 200px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Header{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid blue;
+    width: 80%;
+    height: 30%;
+    margin: 5px;
+}
+.Content{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid blue;
+    width: 80%;
+    height: 70%;
+}

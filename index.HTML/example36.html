@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>The output Element</h2>
+    <p>The out put element represents the result of a calculation.</p>
+
+    <form action="/action_page.php"
+        oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" name="a" value="50">
+        100+
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+    </form>
+    <br><br>
+    <form action="/action_page.php"
+    oninput="x.value=parseInt(a.value)-parseIntw(b.value)">
+    0
+    <input type="range" id="a" name="a" value="50">
+    100-
+    <input type="number" id="b" name="b" value="10">
+    =
+    <output name="x" for="a b"></output>
+    <br><br>
+    <input type="submit">
+</form>
+<p><strong>Note:</strong> The output element is not supported in Edge 12 or Internet Explorer and earlier versions.</p>
+</body>
+</html>
